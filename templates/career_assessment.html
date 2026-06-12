@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Assessment</title>
+
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  
+</head>
+<style>
+  
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fb;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assessment-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.assessment-card {
+    width: 450px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    transition: 0.3s ease;
+}
+
+.assessment-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.header h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.header p {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 500px) {
+    .assessment-card {
+        width: 90%;
+        padding: 20px;
+    }
+}
+</style>
+
+<body>
+
+<body>
+
+<div class="container py-5">
+
+   <div class="assessment-wrapper">
+
+    <div class="assessment-card mx-auto">
+
+        <div class="header">
+            <h1>🚀 Career Assessment</h1>
+            <p>Discover your best career path based on your profile</p>
+        </div>
+
+        <form action="/result" method="POST">
+
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <select name="education" required>
+                    <option value="">Select Education</option>
+                    <option>BCA</option>
+                    <option>B.Tech</option>
+                    <option>B.Sc</option>
+                    <option>MCA</option>
+                    <option>M.Tech</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="skills"
+                    placeholder="Skills (HTML, CSS, Python, SQL...)" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="interests"
+                    placeholder="Interests (AI, Web Dev, Data Science...)" required>
+            </div>
+
+            <div class="form-group">
+                <select name="goal" required>
+                    <option value="">Career Goal</option>
+                    <option>Job</option>
+                    <option>Freelancing</option>
+                    <option>Startup</option>
+                    <option>Higher Studies</option>
+                </select>
+            </div>
+
+            <button type="submit">
+                Analyze My Career →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+
+</body>
+</html>
