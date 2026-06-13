@@ -229,20 +229,13 @@
         const dropZone = document.getElementById('dropZone');
 
         if (fileInput.files.length > 0) {
-            // 1. Swap UI to Loading State
             uploadUI.classList.add('d-none');
             loadingUI.classList.remove('d-none');
-
-            // 2. Add visual pulse/freeze to the drop zone
             dropZone.style.pointerEvents = 'none';
             dropZone.style.borderColor = '#6366f1';
-
-            // 3. Submit the Form to the Server
           document.getElementById('uploadForm').submit();
         }
     }
-
-    // Optional: Allow Drag and Drop
     const dropZone = document.getElementById('dropZone');
     dropZone.addEventListener('dragover', (e) => {
         e.preventDefault();
