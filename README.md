@@ -16,7 +16,7 @@ An AI-powered Resume Analyzer and Career Advisor that helps users evaluate their
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS
 - **Backend:** Python (Flask)
 - **AI:** GROQ API
 - **Database:** SQLite 
