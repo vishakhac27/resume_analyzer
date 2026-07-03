@@ -31,6 +31,7 @@ project/
 │── app.py
 │── career_engine.py
 │── db.py
+│── resume_parser.py
 │── requirements.txt
 │── README.md
 ```
